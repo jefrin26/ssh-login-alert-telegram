@@ -21,6 +21,16 @@ Work on all popular linux system (Debian, Ubuntu, Arch Linux etc..)
 4) Confirm that the script is working by logging you to ssh again.
 
 
+### Uninstall
+Run the uninstaller as root:
+```sudo bash uninstaller.sh```
+
+To also delete the install directory (including `credentials.config`):
+```sudo bash uninstaller.sh --purge```
+
+Use `--dry-run` to preview the changes without touching anything. A timestamped
+backup of `/etc/zsh/zshrc` is created before it is modified.
+
 ### Install with Ansible
 
 If you have many servers go check: https://github.com/vdeville/Deploy-Telegram-SSH-Alerting-with-Ansible (fork of initial @stylernico work)
